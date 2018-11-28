@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
 
 const users = require("./routes/api/users");
 const posts = require("./routes/api/posts");
@@ -16,6 +17,9 @@ mongoose
   .catch(err => console.log(err));
 
 const app = express();
+
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
 app.get("/", (req, res) => res.send("hello"));
 
