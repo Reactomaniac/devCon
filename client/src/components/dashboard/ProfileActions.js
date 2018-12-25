@@ -13,7 +13,7 @@ const ProfileActions = () => {
         <i className="fas fa-graduation-cap text-info mr-1"></i>
         Add Education</Link>
     </div>
-    )
-}
+    );
+};
 
-export default ProfileActions
+export default ProfileActions;
