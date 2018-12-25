@@ -132,7 +132,7 @@ class AddExperience extends Component {
                   value={this.state.description}
                   onChange={this.onChange}
                   error={errors.description}
-                  info="Tell us abouut the position"
+                  info="Tell us about the position"
                 />
                 <input type="submit" value="Submit" className="btn btn-info btn-block mt-4" />
               </form>
